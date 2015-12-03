@@ -35,7 +35,7 @@ class GoogleWebFontsExtension extends AbstractTwigExtension
 
         $this
             ->enableOptionHtmlSafe()
-            ->addFunction('add_font',      [$this, 'addFont']    )
+            ->addFunction('add_font',      [$this, 'addFont'])
             ->addFunction('get_font_link', [$this, 'getFontStylesheetLink']);
     }
 

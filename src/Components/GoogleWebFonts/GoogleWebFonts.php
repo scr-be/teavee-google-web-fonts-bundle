@@ -121,7 +121,7 @@ class GoogleWebFonts implements GoogleWebFontsInterface
         $styles = $this->normalizeStyles($styles);
 
         foreach ($weights as $weight) {
-            array_map(function($style) use ($name, $weight) {
+            array_map(function ($style) use ($name, $weight) {
                 $this->addFont($name, $weight, $style);
             }, $styles);
         }
@@ -164,7 +164,7 @@ class GoogleWebFonts implements GoogleWebFontsInterface
             return str_replace('%FONTS%', $this->renderStylesheetLinkFonts(), $this->linkTemplate);
         }
 
-        return null;
+        return;
     }
 
     /**
@@ -175,14 +175,14 @@ class GoogleWebFonts implements GoogleWebFontsInterface
         $fonts = [];
 
         foreach ($this->fonts as $name => $weights) {
-            $fonts[] = urlencode($name) . ':' . implode(',', $weights);
+            $fonts[] = urlencode($name).':'.implode(',', $weights);
         }
 
         return implode('|', $fonts);
     }
 
     /**
-     * @param  int[]|null $weights
+     * @param int[]|null $weights
      *
      * @return int[]
      */
@@ -190,7 +190,7 @@ class GoogleWebFonts implements GoogleWebFontsInterface
     {
         $weights = is_array($weights) ? $weights : [$weights];
 
-        array_walk($weights, function(&$w) {
+        array_walk($weights, function (&$w) {
             if (null === $w) {
                 $w = self::WEIGHT_NORMAL;
             }
@@ -202,7 +202,7 @@ class GoogleWebFonts implements GoogleWebFontsInterface
     }
 
     /**
-     * @param  string[]|null $styles
+     * @param string[]|null $styles
      *
      * @return string[]
      */
@@ -210,7 +210,7 @@ class GoogleWebFonts implements GoogleWebFontsInterface
     {
         $styles = is_array($styles) ? $styles : [$styles];
 
-        array_walk($styles, function(&$s) {
+        array_walk($styles, function (&$s) {
             if (null === $s) {
                 $s = self::STYLE_NONE;
             }
@@ -229,7 +229,7 @@ class GoogleWebFonts implements GoogleWebFontsInterface
      */
     protected function normalizeAttributes($weight, $style)
     {
-        return (string) ((int) $weight . (string) ($style != self::STYLE_NONE ? $style : ''));
+        return (string) ((int) $weight.(string) ($style != self::STYLE_NONE ? $style : ''));
     }
 }
 
