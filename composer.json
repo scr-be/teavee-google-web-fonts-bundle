@@ -1,0 +1,59 @@
+{
+    "name"        : "scr-be/teavee-google-web-fonts-bundle",
+    "license"     : "MIT",
+    "type"        : "library",
+    "homepage"    : "https://scr.be/teavee-google-web-fonts-bundle",
+    "description" : "Tiny bundle to setup Google web fonts through bundle config, in a controller, and/or in a template --- and a helper function to render the link in your template.",
+    "support" : {
+        "email"  : "rmf@scr.be",
+        "issues" : "https://teavee-google-web-fonts-bundle.oss.scr.be/issues",
+        "source" : "https://teavee-google-web-fonts-bundle.oss.scr.be/git",
+        "irc"    : "irc://irc.efnet.org/scribe"
+    },
+    "keywords"   : [
+        "teavee-google-web-fonts-bundle", "scribe-teavee-google-web-fonts-bundle", "doctrine", "library", "scr.be", "scribe", "scribenet", "scribe-software", "scribe-systems"
+    ],
+    "authors"    : [
+        {
+            "name"    : "Rob Frawley 2nd",
+            "email"   : "rmf@scr.be",
+            "homepage": "https://scr.be/rmf",
+            "role"    : "Project Lead"
+        }
+    ],
+    "require" : {
+        "php"                 : ">=5.6.4,~5.6|~7.0",
+        "scr-be/wonka-bundle" : "~0.2"
+    },
+    "require-dev" : {
+        "symfony/symfony"          : "~2.8|~3.0",
+        "symfony/stopwatch"        : "~2.8|~3.0",
+        "symfony/framework-bundle" : "~2.8|~3.0",
+        "symfony/debug-bundle"     : "~2.8|~3.0",
+        "symfony/monolog-bundle"   : "~2.8|~3.0",
+        "symfony/phpunit-bridge"   : "~2.8|~3.0",
+        "phpunit/phpunit"          : "~5.0",
+        "codacy/coverage"          : "~1.0",
+        "satooshi/php-coveralls"   : "~0.7"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Scribe\\Teavee\\GoogleWebFontsBundle\\" : "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Scribe\\Teavee\\GoogleWebFontsBundle\\Tests\\" : "tests/"
+        }
+    },
+    "minimum-stability" : "dev",
+    "prefer-stable"     : true,
+    "config": {
+        "bin-dir" : "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master" : "0.1-dev"
+        }
+    }
+}

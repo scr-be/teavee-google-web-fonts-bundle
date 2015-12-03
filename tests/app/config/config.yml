@@ -1,0 +1,38 @@
+framework:
+    secret:          "Secret for tests!"
+    router:          { resource: "%kernel.root_dir%/config/routing.yml" }
+    session:         ~
+    default_locale:  en
+    translator:      { fallback: en }
+    profiler:        { only_exceptions: false }
+
+monolog:
+    handlers:
+        main:
+             type: "null"
+
+scribe_google_web_fonts:
+    global:
+
+        # List of fonts/weights/styles to include.
+        fonts_list:           # Required
+
+            # The name of the web font.
+            Alegreya:
+                weights:
+                    - 400
+
+            Alegreya Sans:
+                weights:
+                    - 300
+                    - 400
+                styles:
+                    - normal
+                    - italic
+
+            Alegreya Sans SC:
+                weights:
+                    - 300
+                    - 400
+
+            Ubuntu Mono: ~
