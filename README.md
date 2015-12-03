@@ -1,7 +1,7 @@
 # Scribe: Teavee Google Web Fonts Bundle
 
 [![Travis](https://scr.be/teavee-google-web-fonts-bundle/travis_shield)](https://scr.be/teavee-google-web-fonts-bundle/travis)
-[![Scrutinizer](https://scr.be/teavee-google-web-fonts-bundle/scrutinizer_shield)](https://scr.be/teavee-google-web-fonts-bundle/scrutinizer)
+[![Codacy](https://scr.be/teavee-google-web-fonts-bundle/codacy_shield)](https://scr.be/teavee-google-web-fonts-bundle/codacy)
 [![Coveralls](https://scr.be/teavee-google-web-fonts-bundle/coveralls_shield)](https://scr.be/teavee-google-web-fonts-bundle/coveralls)
 [![Gemnasium](https://scr.be/teavee-google-web-fonts-bundle/gemnasium_shield)](https://scr.be/teavee-google-web-fonts-bundle/gemnasium)
 
