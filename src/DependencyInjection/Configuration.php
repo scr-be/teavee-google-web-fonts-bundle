@@ -22,7 +22,7 @@ class Configuration extends AbstractConfiguration
     {
         $this
             ->getBuilderRoot()
-            ->getNodeBuilder()
+            ->getNodeDefinition()
             ->children()
                 ->append($this->getGlobalNode())
             ->end();
@@ -36,7 +36,7 @@ class Configuration extends AbstractConfiguration
     {
         return $this
             ->getBuilder('global')
-            ->getNodeBuilder()
+            ->getNodeDefinition()
             ->addDefaultsIfNotSet()
             ->children()
                 ->scalarNode('link_template')
