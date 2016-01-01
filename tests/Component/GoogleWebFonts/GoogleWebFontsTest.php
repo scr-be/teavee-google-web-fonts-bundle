@@ -29,7 +29,7 @@ class GoogleWebFontsTest extends KernelTestCase
     {
         parent::setUp();
 
-        $this->generator = static::$staticContainer->get('s.google_web_fonts.generator');
+        $this->generator = static::$staticContainer->get('s.teavee_google_web_fonts.generator');
     }
 
     public function test_get_link_template()

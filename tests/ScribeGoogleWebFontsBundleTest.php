@@ -46,12 +46,12 @@ class ScribeGoogleWebFontsBundleTest extends WonkaTestCase
 
     public function test_has_google_web_font_generator_service()
     {
-        static::assertTrue(self::$kernel->getContainer()->has('s.google_web_fonts.generator'));
+        static::assertTrue(self::$kernel->getContainer()->has('s.teavee_google_web_fonts.generator'));
     }
 
     public function test_has_google_web_font_extension_service()
     {
-        static::assertTrue(self::$kernel->getContainer()->has('s.google_web_fonts.twig_extension'));
+        static::assertTrue(self::$kernel->getContainer()->has('s.teavee_google_web_fonts.twig_extension'));
     }
 }
 

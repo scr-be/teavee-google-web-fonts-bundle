@@ -4,29 +4,29 @@ parameters :
 
     # Generator
 
-    s.google_web_fonts.generator.class      : Scribe\Teavee\GoogleWebFontsBundle\Components\GoogleWebFonts\GoogleWebFonts
+    s.teavee_google_web_fonts.generator.class      : Scribe\Teavee\GoogleWebFontsBundle\Components\GoogleWebFonts\GoogleWebFonts
 
     # Twig Extension
 
-    s.google_web_fonts.twig_extension.class : Scribe\Teavee\GoogleWebFontsBundle\Templating\Extension\GoogleWebFontsExtension
+    s.teavee_google_web_fonts.twig_extension.class : Scribe\Teavee\GoogleWebFontsBundle\Templating\Extension\GoogleWebFontsExtension
 
 services :
 
     # Generator
 
-    s.google_web_fonts.generator :
-        class     : %s.google_web_fonts.generator.class%
+    s.teavee_google_web_fonts.generator :
+        class     : %s.teavee_google_web_fonts.generator.class%
         arguments :
-            - %s.google_web_fonts.global.fonts%
+            - %s.teavee_google_web_fonts.global.fonts%
         calls:
-            - [setLinkTemplate, [%s.google_web_fonts.global.link_template%]]
+            - [setLinkTemplate, [%s.teavee_google_web_fonts.global.link_template%]]
 
     # Twig Extension
 
-    s.google_web_fonts.twig_extension :
-        class     : %s.google_web_fonts.twig_extension.class%
+    s.teavee_google_web_fonts.twig_extension :
+        class     : %s.teavee_google_web_fonts.twig_extension.class%
         arguments :
-            - '@s.google_web_fonts.generator'
+            - '@s.teavee_google_web_fonts.generator'
         tags :
             - { name : twig.extension }
 

@@ -29,7 +29,7 @@ class GoogleWebFontsExtensionTest extends KernelTestCase
     {
         parent::setUp();
 
-        $this->e = static::$staticContainer->get('s.google_web_fonts.twig_extension');
+        $this->e = static::$staticContainer->get('s.teavee_google_web_fonts.twig_extension');
     }
 
     public function test_empty_font_list()
