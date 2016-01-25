@@ -23,6 +23,7 @@ class Configuration extends AbstractConfiguration
         $this
             ->getBuilderRoot()
             ->getNodeDefinition()
+            ->canBeEnabled()
             ->children()
                 ->append($this->getGlobalNode())
             ->end();
