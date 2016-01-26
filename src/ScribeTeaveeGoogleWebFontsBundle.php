@@ -14,9 +14,9 @@ namespace Scribe\Teavee\GoogleWebFontsBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class ScribeGoogleWebFontsBundle.
+ * Class TeaveeGoogleWebFontsBundle.
  */
-class ScribeGoogleWebFontsBundle extends Bundle
+class ScribeTeaveeGoogleWebFontsBundle extends Bundle
 {
 }
 

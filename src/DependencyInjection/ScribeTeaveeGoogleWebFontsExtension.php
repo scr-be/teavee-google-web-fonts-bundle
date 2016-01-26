@@ -14,9 +14,9 @@ namespace Scribe\Teavee\GoogleWebFontsBundle\DependencyInjection;
 use Scribe\WonkaBundle\Component\DependencyInjection\AbstractEnableableExtension;
 
 /**
- * Class ScribeGoogleWebFontsExtension.
+ * Class ScribeTeaveeGoogleWebFontsExtension.
  */
-class ScribeGoogleWebFontsExtension extends AbstractEnableableExtension
+class ScribeTeaveeGoogleWebFontsExtension extends AbstractEnableableExtension
 {
 }
 

@@ -28,7 +28,7 @@ class AppKernel extends Kernel
             new \Symfony\Bundle\MonologBundle\MonologBundle(),
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Scribe\WonkaBundle\ScribeWonkaBundle(),
-            new \Scribe\Teavee\GoogleWebFontsBundle\ScribeGoogleWebFontsBundle(),
+            new \Scribe\Teavee\GoogleWebFontsBundle\ScribeTeaveeGoogleWebFontsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {

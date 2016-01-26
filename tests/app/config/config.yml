@@ -16,7 +16,7 @@ imports:
     - { resource: ../../../.config/testers/symfony/config/framework.yml }
     - { resource: ../../../.config/testers/symfony/config/monolog.yml }
 
-scribe_google_web_fonts:
+scribe_teavee_google_web_fonts:
     global:
 
         fonts_list:
