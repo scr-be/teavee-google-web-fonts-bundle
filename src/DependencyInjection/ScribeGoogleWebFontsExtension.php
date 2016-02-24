@@ -11,12 +11,12 @@
 
 namespace Scribe\Teavee\GoogleWebFontsBundle\DependencyInjection;
 
-use Scribe\WonkaBundle\Component\DependencyInjection\AbstractExtension;
+use Scribe\WonkaBundle\Component\DependencyInjection\AbstractEnableableExtension;
 
 /**
  * Class ScribeGoogleWebFontsExtension.
  */
-class ScribeGoogleWebFontsExtension extends AbstractExtension
+class ScribeGoogleWebFontsExtension extends AbstractEnableableExtension
 {
 }
 

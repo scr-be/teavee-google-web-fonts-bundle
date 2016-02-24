@@ -17,27 +17,28 @@ imports:
     - { resource: ../../../.config/testers/symfony/config/monolog.yml }
 
 scribe_google_web_fonts:
-    global:
+    enabled : true
 
-        fonts_list:
+    global :
+        fonts_list :
 
-            Alegreya:
-                weights:
+            Alegreya :
+                weights :
                     - 400
 
-            Alegreya Sans:
-                weights:
+            Alegreya Sans :
+                weights :
                     - 300
                     - 400
-                styles:
+                styles :
                     - normal
                     - italic
 
-            Alegreya Sans SC:
-                weights:
+            Alegreya Sans SC :
+                weights :
                     - 300
                     - 400
 
-            Ubuntu Mono: ~
+            Ubuntu Mono : ~
 
 ...
